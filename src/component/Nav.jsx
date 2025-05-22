@@ -3,7 +3,7 @@ import React from 'react'
 function Nav() {
   return (
     <div style={{"background":"black",
-    "height":"200px",
+    "height":"100px",
     "display":"flex",
     "justifyContent":"space-around",
     "alignItems":"center"

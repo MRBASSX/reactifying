@@ -23,9 +23,10 @@ const Man = (e)=>{
     return (
 
         <>
-       <form  action="" method="post" >
-       <Button onClick={Man()} name={"Man"}/>
-       </form>
+       {/* <form  action="" method="post" > */}
+        {/* <input type="text"  name="done"/> */}
+        <Button onClick={Man} name='ABASS' />
+       {/* </form> */}
         {/* <MyDatabase database={message}/> */}
         <h1>{name}</h1>
         <h1>{age}</h1>

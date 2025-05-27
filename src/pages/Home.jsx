@@ -14,18 +14,33 @@ function Home({name,age,birth,database}) {
 //         }
 //     ]
 
-const Man = (e)=>{
+const Mariam = (e)=>{
      e.preventDefault();
-     alert("Man")
+     alert("Mariam")
    
   }
+
+  const Salamatu = (e)=>{
+    e.preventDefault();
+    alert("Salamatu")
+  
+ }
+ const ABASS = (e)=>{
+    e.preventDefault();
+    alert("ABASS")
+  
+ }
+
+ var namee = 'ABASS4444'
 
     return (
 
         <>
        {/* <form  action="" method="post" > */}
         {/* <input type="text"  name="done"/> */}
-        <Button onClick={Man} name='ABASS' />
+        <Button onClick={ABASS} name={namee} />
+        <Button onClick={Salamatu} name={"Salamatu"}/>
+        <Button onClick={Mariam} name={"Mariam"}/>
        {/* </form> */}
         {/* <MyDatabase database={message}/> */}
         <h1>{name}</h1>

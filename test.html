@@ -33,6 +33,7 @@ let Addition = ()=>{
 function AnotherAddition(number1,number2) {
     
     alert(number1 + number2)
+    return 0;
 }
 
 // Anonymous Function
@@ -42,6 +43,20 @@ function name(params) {
 
 
 click.addEventListener("click",  Addition   )
+let hello = function example(email,password){
+    let isLogin = email== DbEmail && password == DBpassword
+   if (isLogin) {
+
+       location.href = "/HOME";
+
+   } else {
+
+    location.href = "/LOGIN";
+   }
+    
+}
+
+hello();
 </script>
 </body>
 </html>

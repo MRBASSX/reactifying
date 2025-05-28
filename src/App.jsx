@@ -3,6 +3,10 @@ import "./Custom.css"
 import Nav from './component/Nav'
 import Home from './pages/Home'
 import GlassmorphismFooter from './component/GlassmorphismFooter'
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import NotFound from './pages/NotFound'
+import Contact from './pages/Contact'
+import About from './pages/About'
 
 
 function App() {
@@ -14,13 +18,23 @@ function App() {
 
   return (
     <>
-     <Nav/>
+   <Router>
+
+   <Nav/>
+
+    <Routes>
+      
+      <Route path='/'  element={<Home></Home>} />
+      <Route path='/contact'  element={<Contact></Contact>} />
+      <Route path='/about'  element={<About></About>} />
+      <Route path='*'  element={<NotFound></NotFound>} />
     
-     
-   <Home name={"Mr Abass"} age = {129} birth ={"25/12/1995"} />
-   <Home name={"Mr Evans"} age = {129} birth ={"25/12/1995"} />
-   <Home name={"Mr Asante"} age = {129} birth ={"25/12/1995"}  />
-   <GlassmorphismFooter/>
+
+
+    </Routes>
+    
+    <GlassmorphismFooter/>
+   </Router>
     </>
   )
 }
